@@ -10,6 +10,14 @@ const setupInput = function() {
 const handleUserInput = function(key) {
   if (key === '\u0003') {
     process.exit();
+  } else if (key === 'w') {
+    console.log('move up');
+  } else if (key === 'a') {
+    console.log("left");
+  } else if (key === 's') {
+    console.log("down");
+  } else if (key === 'd') {
+    console.log("right");
   }
 };
 
