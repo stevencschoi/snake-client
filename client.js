@@ -1,7 +1,7 @@
 const net = require('net');
 
 const connect = function() {
-  const conn = net.createConnection({ 
+  const conn = net.createConnection({
     host: '172.46.0.236',
     port: 50541
   });
@@ -25,6 +25,6 @@ const connect = function() {
   });
 
   return conn;
-}
+};
 
-module.exports = {connect}
+module.exports = {connect};
