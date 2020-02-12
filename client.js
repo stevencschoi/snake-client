@@ -13,8 +13,15 @@ const connect = function() {
   });
 
   conn.on('connect', () => {
-    console.log('Successfully connected to the game server');
+    console.log("Successfully connected to the game server");
+    
     conn.write("Name: SCC");
+    // setInterval(() => {
+    //   conn.write("Move: up");
+    // },500);
+    // conn.write("Move: up");
+    // conn.write("Move: down");
+    // conn.write("Move: right");
   });
 
   return conn;
