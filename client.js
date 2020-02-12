@@ -23,8 +23,8 @@ const connect = function() {
     // conn.write("Move: down");
     // conn.write("Move: right");
   });
-
   return conn;
+
 };
 
 module.exports = { connect };
