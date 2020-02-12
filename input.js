@@ -11,30 +11,23 @@ const setupInput = function(conn) {
 };
 
 const handleUserInput = function(key) {
-  console.log("key is ", key);
   if (key === '\u0003') {
     process.exit();
   }
-  console.log(key=== 'w')
   if (key === 'w') {
-    console.log("UP")
     connection.write("Move: up");
   }
   if (key === 'a') {
-    console.log("LEFT")
     connection.write("Move: left")
-    
   }
   if (key === 's') {
-    console.log("DOWN")
     connection.write("Move: down")
   }
   if (key === 'd') {
-    console.log("RIGHT")
     connection.write("Move: right");
   }
   if (key === 'e') {
-    connection.write("Say: FOH");
+    connection.write("Say: Leggo my eggo");
   }
 };
 
